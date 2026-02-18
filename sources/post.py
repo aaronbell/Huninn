@@ -1,7 +1,7 @@
 import glob
 from pathlib import Path
-from fonttools.ttLib import TTFont
-from fonttools.ttLib.tables._v_h_e_a import table__v_h_e_a
+from fontTools.ttLib import TTFont
+from fontTools.ttLib.tables._v_h_e_a import table__v_h_e_a
 
 for file in Path("fonts").glob("**/*.ttf"):
     font = TTFont(str(file))
